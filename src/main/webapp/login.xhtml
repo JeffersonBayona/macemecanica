@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>MACE</title>
+        <link rel="icon" type="img/png" href="resources/img/Icono_MACE/hol.png"></link>
+        <link rel="stylesheet" href="resources/css/normalize.css"></link>
+        <link rel="stylesheet" href="resources/css/sweetalert2.css"></link>
+        <link rel="stylesheet" href="resources/css/material.min.css"></link>
+        <link rel="stylesheet" href="resources/css/material-design-iconic-font.min.css"></link>
+        <link rel="stylesheet" href="resources/css/jquery.mCustomScrollbar.css"></link>
+        <link rel="stylesheet" href="resources/css/main.css"></link>
+    </h:head>
+    <h:body class="cover">
+        <div class="container-login">
+            <p class="text-center" style="font-size: 80px;">
+                <i class="zmdi zmdi-account-circle"></i>
+            </p>
+            <p class="text-center text-condensedLight">Inicie sesión con su cuenta</p>
+            <h:form>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <h:inputText value="#{controller_mace.correo}" class="mdl-textfield__input" id="userName"></h:inputText>
+                    <label class="mdl-textfield__label" for="userName">Nombre de usuario</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <h:inputSecret value="#{controller_mace.password}" class="mdl-textfield__input" id="pass"></h:inputSecret>
+                    <label class="mdl-textfield__label" for="pass">Contraseña</label>
+                </div>
+                <div>
+                    <h:commandButton action="#{controller_mace.login()}" value="Iniciar sesión" id="SingIn" class="mdl-button mdl-js-button mdl-js-ripple-effect" style="color: #3F51B5; float:right"></h:commandButton>
+
+                </div>
+                <p>#{controller_mace.menssage1}</p>
+            </h:form>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="resources/js/material.min.js" ></script>
+        <script src="resources/js/sweetalert2.min.js" ></script>
+        <script src="resources/js/jquery.mCustomScrollbar.concat.min.js" ></script>
+        <script src="resources/js/main.js" ></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <c:if test="#{messagesBean.title != null}">
+            <script>
+                swal.fire("#{messagesBean.title}", "#{messagesBean.message}", "#{messagesBean.icono}");
+            </script>
+        </c:if>
+        
+    </h:body>
+</html>
+

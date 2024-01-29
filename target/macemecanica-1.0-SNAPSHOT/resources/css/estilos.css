@@ -1,0 +1,154 @@
+.nav-item:hover {
+  background-color: orange;
+  transition: 0.5s;
+  border-radius: 20%;
+
+}
+.nav-link{
+  color: white;
+}
+
+.hr--separador {
+  height: 2px !important;
+}
+
+.anchos{
+  max-width: 60%;
+
+}
+
+#sec-1 {
+  margin-top: 100px;
+}
+
+#navbarCollapse{
+  justify-content: center;
+}
+
+.bodo {
+  margin: 0;
+  padding: 0;
+  background: #f7f7ff; 
+  background-size: black;
+  font-family: sans-serif;
+  padding-bottom: 3em;
+}
+
+.login-box {
+  width: 450px;
+  height: 450px;
+  background: white;
+  color: rgb(19, 19, 19);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 10px;
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid rgb(14, 13, 13);
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: rgb(12, 12, 12);
+  font-size: 16px;
+}
+
+.login-box input[type="button"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #f02b2b;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="button"]:hover {
+  cursor: pointer;
+  background: rgb(57, 228, 71);
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(17, 17, 17);
+}
+
+.login-box a:hover {
+  border-radius: 3px;
+  padding: 6px 12px;
+  background-color: orange;
+  color: white;
+}
+
+.foote {
+  background: white;
+  color: #636363;
+  font-size: 18px;
+  text-align: center;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  border-radius: 10px;
+}
+.foote a{
+  color: #FB4414;
+  font-size: 17px;
+
+}
+
+.navbar-brand{
+  margin-left: 35px;
+  }
+
+
+
+.lola{
+  margin-top: 4vh;
+  font-size: 18px;
+}
+
+
+.container-fluid{
+  width: 90%;
+}
+
+
+
